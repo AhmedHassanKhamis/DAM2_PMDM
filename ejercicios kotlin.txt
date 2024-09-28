@@ -1,7 +1,165 @@
+1. Crea una lista inmutable con los números del 1 al 5 e imprime el valor de cada número utilizando un bucle for.
+fun main() {
+
+    val numeros = listOf(1,2,3,4,2)
+    for (i in numeros){
+        print(i)
+    }
+
+}
+
+
+2. Crea una lista de números enteros (por ejemplo, del 1 al 10) y calcula la suma de todos los elementos de la lista.
+
+fun main() {
+
+    val numeros = listOf(1,2,3,4,5,6,7,8,9,10)
+   
+   	val suma = numeros.sum()
+    
+    print(suma)
+
+}
+
+
+
+3. Dada una lista de números, encuentra el número más grande.
+
+fun main() {
+
+    val numeros = listOf(1,2,3,4,5,6,7,8,9,10)
+   
+    print(numeros.max())
+
+}
+
+
+
+4. Dada una lista mutable de números, multiplica cada número por 2 y muestra la lista modificada.
+val numeros: MutableList<Int> = mutableListOf(1,2,3,4,5)
+// como hace inferencia se puede poner:
+// val numeros = mutableListOf(1,2,3,4,5)
+
+fun main() {
+
+ 	val numeros = mutableListOf(1,2,3,4,5)
+    print(numeros)
+   	val doblados = numeros.map{n -> n * 2}
+    
+    print(doblados)
+
+}
+
+
+5. Dada una lista de números, crea una nueva lista con solo los números pares.
+
+fun main() {
+
+ 	val numeros = mutableListOf(1,2,3,4,5)
+  	val pares = numeros.filter{ it % 2 == 0 }
+    print(pares)
+
+}
+
+
+
+6. Dadas dos listas de cadenas, concatena las dos listas y muestra el resultado.
+val cadena1 : List<String> = listOf("a", "b", "c")
+val cadena2 = listOf("d", "e", "f")
+
+fun main() {
+
+ 	val cadena1 : List<String> = listOf("a", "b", "c")
+	val cadena2 = listOf("d", "e", "f")
+	val cadenaCompleta = cadena1 + cadena2
+    print(cadenaCompleta)
+}
+
+7. Dada una lista mutable de números, elimina todos los números mayores a 5.
+val numeros = mutableListOf(1,6,3,7,4,8)
+
+fun main() {
+
+ 	val numeros = mutableListOf(1,6,3,7,4,8)
+    val menoresACinco = numeros.filter{ it < 5}
+    print(menoresACinco)
+
+}
+
+
+8. Dada una lista de números, cuenta cuántas veces aparece el número 3.
+val numeros = listOf(3, 1,3,4,3,5)
+
+fun main() {
+
+	val numeros = listOf(3, 1,3,4,3,5)
+    val veces = numeros.count{ it == 3 }
+    print(veces)
+
+
+}
+
+
+
+9. Dada una lista, crea una nueva lista que tenga los elementos en orden inverso.
+
+fun main() {
+
+	val numeros = listOf(3, 1,3,4,3,5)
+    val inversa = numeros.reversed()
+    print(inversa)
+
+
+}
+
+10. Dada una lista de números, calcula la suma de todos los números impares.
+
+fun main() {
+
+	val numeros = listOf(3, 1,3,4,3,5)
+    val impares = numeros.filter{n -> n % 2 !=0}
+    print(impares.sum())
+
+
+}
+
+
+11. Dada una lista mutable de cadenas, reemplaza todas las ocurrencias de "perro" por "gato".
+val animales = mutableListOf("perro", "gato", "perro", "ratón")
+
+fun main() {
+
+	val animales = mutableListOf("perro", "gato", "perro", "ratón")
+	val animales2 = animales.map{ n -> n.replace("gato","perro",true)}
+    print(animales2)
+
+
+}
+
+12. Dada una lista de números con duplicados, elimina los elementos duplicados.
+
+fun main() {
+
+    fun main() {
+
+    val numeros = listOf(1,2,3,4,2)
+    
+    val unicos = numeros.toSet()
+    
+    print(numeros)
+    println("unicos:")
+    print(unicos)
+
+
+}
+
+
+}
+
+
+
 13. Verifica si la lista contiene el número 5./**
- * You can edit, run, and share this code.
- * play.kotlinlang.org
- */
+
 fun main() {
 
     val numeros = listOf(1,2,3,4,5)
@@ -71,9 +229,233 @@ fun main() {
     val numeros = listOf(1,2,3,4,5)
    
     val cuadrados = numeros.map{n -> n * n}
-    //val cuadrados = numeros.map()
     print (numeros)
     println(cuadrados)
     
     
+}
+
+
+18. Dada una lista de números, encuentra todos los números mayores a 10.
+
+fun main() {
+
+	val numeros = listOf(1,2,3,4,5,6,7,8,9,0,12,13,14,15,16,17,17)
+    val mayores = numeros.filter{ it > 10 }
+    print(mayores)
+
+}
+
+
+19. Dada una lista de números, rota la lista una posición hacia la izquierda (el primer elemento
+pasa al final).
+
+fun main() {
+    val numeros = listOf(1,2,3,4,5,6,7,8,9,0,12,13,14,15,16,17,17)
+    val rotada = numeros.drop(1) + numeros.first()
+    print(rotada)
+}
+
+
+
+
+20. Dada una lista mutable de empleados con sus salarios (pares de nombre y salario), separa a
+los empleados en dos listas: los que ganan más de 2000 y los que ganan 2000 o menos. Luego,
+imprime ambas listas.
+
+fun main() {
+    val empleados = mutableListOf(
+        Pair("Juan", 2500),
+        Pair("Ana", 1800),
+        Pair("Luis", 2200),
+        Pair("Marta", 2000),
+        Pair("Carlos", 1500)
+    )
+    
+    val mas2000 = empleados.filter{ it.second > 2000 }
+    val menos2000 = empleados.filter{ it.second < 2000 }
+    
+    println("empleados con mas de 2000")
+    println(mas2000)
+    
+    println("empleados con menos de 2000")
+    println(menos2000)
+}
+
+
+
+21. Dada una lista de productos con su nombre y precio, encuentra el producto más caro y
+muestra su nombre y precio.
+fun main() {
+   val productos = listOf(
+        Pair("Producto1", 100.0),
+        Pair("Producto2", 200.0),
+        Pair("Producto3", 300.0),
+        Pair("Producto4", 400.0),
+        Pair("Producto5", 500.0)
+    )
+
+	val caro  = productos.maxBy{ it.second }
+    
+    print(caro)
+   
+}
+
+
+
+
+22. Dada una lista de estudiantes con sus nombres y calificaciones, ordena la lista de estudiantes
+en función de sus calificaciones de mayor a menor.
+
+fun main() {
+
+ val estudiantes = listOf(
+        Pair("Juan", 85),
+        Pair("Ana", 92),
+        Pair("Luis", 78),
+        Pair("Marta", 95),
+        Pair("Carlos", 88)
+    )
+ val ordenados = estudiantes.sortedBy{ it.second }.reversed()
+ 
+ println(estudiantes)
+ println(ordenados)
+ 
+   
+}
+
+23. Dada una lista de empleados, simula el cambio de turno rotando la lista dos posiciones hacia
+la izquierda. Imprime la lista antes y después del cambio.
+
+fun main() {
+    val empleados = listOf("Juan", "Ana", "Luis", "Marta", "Carlos")
+    println("Lista original: $empleados")
+    val rotada = empleados.drop(2) + empleados.take(2)
+    println("Lista después del cambio de turno: $rotada")
+}
+
+
+
+
+24. Dada una lista de ventas mensuales, calcula el promedio de ventas y luego muestra los meses
+en los que las ventas estuvieron por encima del promedio.
+
+  fun main() {
+   val ventasPorMes = listOf(
+        Pair("Enero" , 150),
+        Pair("Febrero", 120),
+        Pair("Marzo" , 200),
+        Pair("Abril" , 180),
+        Pair("Mayo" , 170),
+        Pair("Junio" , 160),
+        Pair("Julio" , 220),
+        Pair("Agosto", 210),
+        Pair("Septiembre", 190),
+        Pair("Octubre", 230),
+        Pair("Noviembre", 250),
+        Pair("Diciembre", 240)
+    )
+    
+    val promedio = ventasPorMes.map{ it.second }.average()
+    val porEncima = ventasPorMes.filter{ it.second > promedio}
+    println("promedio: ${promedio}")
+    print(porEncima)
+    
+}
+
+25. Dada una lista de estudiantes (pares de ID y nombre), crea una función que reciba el ID de
+un estudiante y devuelva su nombre, o "No encontrado" si el ID no existe.
+
+ fun main() {
+  
+      
+      val estudiantes = listOf(
+            Pair(1, "Juan"),
+            Pair(2, "Ana"),
+            Pair(3, "Luis"),
+            Pair(4, "Marta"),
+            Pair(5, "Carlos")
+        )
+
+   
+      fun existe(id: Int) {
+          print(estudiantes?.find{ it.first == id}?:"no encontrado")	
+      }
+      
+      existe(500)
+       
+}
+
+
+26. Crea una lista mutable que funcione como un carrito de compras (pares de nombre de
+producto y precio). Agrega varios productos, calcula el total del carrito y luego elimina un
+producto específico.
+
+fun main() {
+    val carrito = mutableListOf(
+        Pair("Manzana", 1.0),
+        Pair("Pan", 2.5),
+        Pair("Leche", 1.5),
+        Pair("Queso", 3.0)
+    )
+    
+    // Agregar productos
+    carrito.add(Pair("Yogur", 1.2))
+    carrito.add(Pair("Cereal", 4.0))
+    
+    // Calcular el total
+    val total = carrito.sumByDouble { it.second }
+    println("Total del carrito: $total")
+    
+    // Eliminar un producto específico
+    val productoAEliminar = "Pan"
+    carrito.removeIf { it.first == productoAEliminar }
+    
+    println("Carrito después de eliminar $productoAEliminar: $carrito")
+}
+
+
+
+
+27. Dada una lista de empleados con su nombre y años de antigüedad en la empresa, filtra
+aquellos empleados con más de 5 años de antigüedad.
+
+fun main() {
+    val empleados = listOf(
+        Pair("Juan", 3),
+        Pair("Ana", 6),
+        Pair("Luis", 8),
+        Pair("Marta", 2),
+        Pair("Carlos", 10)
+    )
+    
+    val masDeCincoAnios = empleados.filter { it.second > 5 }
+    println(masDeCincoAnios)
+}
+
+
+
+28. Dada una lista de números y un número específico, encuentra todos los múltiplos de ese
+número en la lista.
+
+fun main() {
+    val numeros = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    val numeroEspecifico = 3
+    val multiplos = numeros.filter { it % numeroEspecifico == 0 }
+    println(multiplos)
+}
+
+
+
+29. Crea una lista con el nombre de 7 empleados y rota la lista indefinidamente en un ciclo, de
+modo que el primer empleado pase al final, y así sucesivamente. Imprime la lista después de cada
+rotación.
+
+fun main() {
+    val empleados = mutableListOf("Juan", "Ana", "Luis", "Marta", "Carlos", "Pedro", "Sofia")
+    while (true) {
+        println(empleados)
+        val primero = empleados.removeAt(0)
+        empleados.add(primero)
+    }
 }
