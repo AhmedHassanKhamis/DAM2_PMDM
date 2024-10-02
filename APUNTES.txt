@@ -1,2 +1,5 @@
 ############### 17/9/2024 ####################
 
+############### 2/10/2024 ####################
+hacer layouts y empty activities
+-constraint layout: es como ponerle un position absolute.
