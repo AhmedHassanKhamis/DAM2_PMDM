@@ -13,6 +13,12 @@
         android:theme="@style/Theme.PrimerProyecto"
         tools:targetApi="31">
         <activity
+            android:name=".ResultadoIMCActivity"
+            android:exported="false" />
+        <activity
+            android:name=".imcCalculatorActivity"
+            android:exported="false" />
+        <activity
             android:name=".PrimerAppActivity"
             android:exported="false" />
     </application>
