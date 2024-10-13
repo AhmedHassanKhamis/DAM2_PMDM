@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.primerproyecto.databinding.ActivityImcCalculatorBinding
 
-class imcCalculatorActivity : AppCompatActivity() {
+class ImcCalculatorActivity : AppCompatActivity() {
     private lateinit var binding: ActivityImcCalculatorBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
