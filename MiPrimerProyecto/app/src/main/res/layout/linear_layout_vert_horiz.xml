@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!--     LINEAR_LAYOUT HORIZONTAL  -->
+
+    <!-- Botón 1 -->
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="6dp"
+        android:text="Botón 1" />
+
+    <!-- Botón 2 -->
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginRight="6dp"
+        android:text="Botón 2" />
+
+    <!-- Botón 3 -->
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Botón 3" />
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+<!-- LINEAR LAYOUT VERTICAL -->
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="16dp">-->
+
+<!--        &lt;!&ndash; Texto de saludo &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/saludarText"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Bienvenido a la app"-->
+<!--            android:textSize="24sp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:paddingBottom="16dp" />-->
+
+<!--        &lt;!&ndash; Campo de entrada de texto &ndash;&gt;-->
+<!--        <EditText-->
+<!--            android:id="@+id/nameInput"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Escribe tu nombre"-->
+<!--            android:padding="12dp"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:backgroundTint="#000000"/>-->
+
+<!--        &lt;!&ndash; Botón para enviar &ndash;&gt;-->
+<!--        <Button-->
+<!--            android:id="@+id/submitButton"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Enviar"-->
+<!--            android:backgroundTint="#6200EE"-->
+<!--            android:textColor="#FFFFFF" />-->
+
+<!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
