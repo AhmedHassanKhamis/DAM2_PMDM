@@ -51,6 +51,9 @@ class ImcInicioActivity : AppCompatActivity() {
 
         }
 
+
+
+        btnSumarP
     }
 
     private fun checkGenero() {
@@ -60,14 +63,14 @@ class ImcInicioActivity : AppCompatActivity() {
 
     private fun setGeneroColor() {
         viewMujer.setCardBackgroundColor(getBackgroundColor(isMujer))
-        viewHombre.setCardBackgroundColor(getBackgroundColor(!isMujer))}
+        viewHombre.setCardBackgroundColor(getBackgroundColor(!isMujer))
+    }
 
 
     private fun getBackgroundColor(isMujer: Boolean) :Int {
         val color=
         if(isMujer) {
             R.color.background_component_selected
-
         }
         else{
             R.color.background_component
