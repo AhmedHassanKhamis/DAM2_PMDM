@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+
+    tools:context=".ejemplosKotlin.MenuActivity">
+
+    <Button
+        android:id="@+id/btnPrimeraApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ir_a_primera_app"
+        />
+    <Button
+        android:id="@+id/btnSegundaApp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ir a segunda App"
+        />
+
+
+
+</LinearLayout>

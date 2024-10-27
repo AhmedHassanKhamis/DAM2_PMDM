@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MyPrimerProyecto</string>
+    <string name="escribe_tu_nombre">Escribe tu nombre</string>
+    <string name="send">Enviar</string>
+    <string name="hombre">Hombre</string>
+    <string name="helicoptero">helicoptero apache</string>
+
+    <string name="mujer">Mujer</string>
+    <string name="altura">Altura</string>
+
+    <string name="error">Error</string>
+    <string name="title_bajo_peso">Bajo peso</string>
+    <string name="description_bajo_peso">Estás por debajo de lo óptimo para tu peso y altura.</string>
+
+    <string name="title_peso_normal">Normal</string>
+    <string name="description_peso_normal">Estás en lo óptimo para tu peso y altura.</string>
+
+    <string name="title_sobrepeso">Sobrepeso</string>
+    <string name="description_sobrepeso">Estás por encima de lo óptimo para tu peso y altura.</string>
+
+    <string name="title_obesidad">Obesidad</string>
+    <string name="description_obesidad">Estás MUY por encima de lo óptimo para tu peso y altura.</string>
+    <string name="ir_a_primera_app">Ir a primera App</string>
+    <string name="peso">Peso</string>
+    <string name="edad">edad</string>
+</resources>

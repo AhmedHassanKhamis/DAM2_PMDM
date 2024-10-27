@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejemplosKotlin.miapp.PrimerAppActivity">
+
+    <View
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="#03A9F4"
+        android:layout_gravity="start"
+        />
+    <View
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="#03A9F4"
+        android:layout_gravity="start|center"
+        />
+
+    <View
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background= "#FF5722"
+        android:layout_gravity="end|center"
+        />
+    <View
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="#F44336"
+        android:layout_gravity="center"
+        />
+
+
+  <View
+      android:layout_width="125dp"
+      android:layout_height="125dp"
+      android:background="#FFC107"
+      android:layout_gravity="bottom"
+      />
+
+    <View
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="#E91E63"
+        android:layout_gravity="center|bottom"
+        />
+
+</FrameLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Texto de saludo -->
+        <TextView
+            android:id="@+id/saludarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido a la app"
+            android:textSize="24sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp" />
+
+        <!-- Campo de entrada de texto -->
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/escribe_tu_nombre"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#000000"/>
+
+        <!-- Botón para enviar -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:backgroundTint="#6200EE"
+            android:textColor="#FFFFFF" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="horizontal"-->
+<!--    android:padding="16dp">-->
+
+<!--    &lt;!&ndash;     LINEAR_LAYOUT HORIZONTAL  &ndash;&gt;-->
+
+<!--    &lt;!&ndash; Botón 1 &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/btn1"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_marginRight="6dp"-->
+<!--        android:text="Botón 1" />-->
+
+<!--    &lt;!&ndash; Botón 2 &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/btn2"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_marginRight="6dp"-->
+<!--        android:text="Botón 2" />-->
+
+<!--    &lt;!&ndash; Botón 3 &ndash;&gt;-->
+<!--    <Button-->
+<!--        android:id="@+id/btn3"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:text="Botón 3" />-->
+
+<!--    -->
+<!--</androidx.appcompat.widget.LinearLayoutCompat>-->
+
+
+<!-- LINEAR LAYOUT VERTICAL -->
