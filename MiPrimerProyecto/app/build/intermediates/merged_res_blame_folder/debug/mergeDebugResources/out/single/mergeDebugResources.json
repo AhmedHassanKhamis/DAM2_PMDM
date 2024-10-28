@@ -1,0 +1,122 @@
+[
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.miprimerproyecto.app-debug-31:/layout_activity_imc_inicio.xml.flat",
+        "source": "com.example.miprimerproyecto.app-main-33:/layout/activity_imc_inicio.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/layout_activity_result.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/layout/activity_result.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/layout_constrain_layout_ejemplo.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/layout/constrain_layout_ejemplo.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/layout_linear_layout_anidados.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/layout/linear_layout_anidados.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/layout_activity_menu.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/layout/activity_menu.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/layout_linear_layout_vert_horiz.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/layout/linear_layout_vert_horiz.xml"
+    },
+    {
+        "merged": "com.example.miprimerproyecto.app-debug-31:/drawable_ic_mas.xml.flat",
+        "source": "com.example.miprimerproyecto.app-main-33:/drawable/ic_mas.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/drawable_baseline_man_24.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/drawable/baseline_man_24.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/layout_activity_primera.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/layout/activity_primera.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/layout_activity_imc_inicio.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/layout/activity_imc_inicio.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/layout_linear_layout.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/layout/linear_layout.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/layout_activity_segunda.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/layout/activity_segunda.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/drawable_baseline_woman_24.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/drawable/baseline_woman_24.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/xml_data_extraction_rules.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/xml_backup_rules.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-debug-31:/layout_activity_primera_app.xml.flat",
+        "source": "/home/usertar/.gradle/daemon/8.7/com.example.miprimerproyecto.app-main-33:/layout/activity_primera_app.xml"
+    }
+]
