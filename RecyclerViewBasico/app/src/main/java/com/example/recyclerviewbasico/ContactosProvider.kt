@@ -17,7 +17,9 @@ class ContactosProvider {
             Contacto("Gabriela San José", "78325648"),
             Contacto("Gustavo Tellado", "689321584"),
             Contacto("Alvaro Alfaro", "7892465"),
-            Contacto("Ana De Gea", "678325488")
+            Contacto("Ana De Gea", "678325488"),
+            Contacto("Ahmed Hassan", "678325488")
+
         )
     }
 }

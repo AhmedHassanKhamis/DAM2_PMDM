@@ -4,10 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class ContactoAdapter(val contactos: List<Contacto>) : RecyclerView.Adapter<ContactoViewHolder> {
+class ContactoAdapter(val contactos: List<Contacto>) : RecyclerView.Adapter<ContactoViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactoViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_contacto, parent, false)
-        return 
+        return ContactoViewHolder(view)
     }
 
     override fun getItemCount(): Int {
@@ -15,7 +15,9 @@ class ContactoAdapter(val contactos: List<Contacto>) : RecyclerView.Adapter<Cont
     }
 
     override fun onBindViewHolder(holder: ContactoViewHolder, position: Int) {
-
+        val contacto = contactos[position]
+        holder.tvNombre.text = contacto.nombre
+        holder.tvTelefono.text = contacto.telefono
     }
 
 }
