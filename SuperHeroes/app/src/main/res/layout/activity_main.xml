@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/todo_background_todo_app"
+        android:orientation="vertical"
+        tools:context=".todoapp.TodoActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginVertical="44dp"
+            android:text="@string/todo_titulo"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/todo_categorias"
+            android:textAllCaps="true"
+            android:textColor="@color/todo_subtitle_text"
+            android:layout_marginHorizontal="32dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCategorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/todo_tareas"
+            android:textAllCaps="true"
+            style="@style/todoSubtitle"
+            />
+        <!-- el style de este textView es lo mismo que el de categorías
+        copiar eso también en categorías, para no repetir código
+        -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTareas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="32dp"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:src="@drawable/ic_add"
+        app:tint="@color/white"
+        android:backgroundTint="@color/todo_accent"
+        app:fabSize="normal"
+        android:layout_gravity="end|bottom"
+        />
+
+</FrameLayout>
