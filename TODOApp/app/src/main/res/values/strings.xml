@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Name</string>
+    <string name="todo_titulo">Bienvenido, Ahmed</string>
+    <string name="todo_categorias">Categorías:</string>
+    <string name="todo_tareas">Tareas:</string>
+    <string name="agregar_tarea">Agregar tarea</string>
+    <string name="todo_dialogo_categoria_negocio">Negocio</string>
+    <string name="todo_dialogo_categoria_personal">Personal</string>
+    <string name="todo_dialogo_categoria_other">Other</string>
+</resources>

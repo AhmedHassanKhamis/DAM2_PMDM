@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:background="@color/todo_background_todo_app"
+    android:padding="16dp"
+    android:orientation="vertical"
+
+    >
+
+    <EditText
+        android:id="@+id/etTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Agregar tarea"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        />
+
+    <RadioGroup
+        android:id="@+id/rgCategorias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+        <RadioButton
+            android:id="@+id/rbBussiness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:buttonTint="@color/todo_business_category"
+            android:text="Negocio"
+            android:textColor="@color/white"
+
+            />
+        <RadioButton
+            android:id="@+id/rbPersonal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/todo_personal_category"
+            android:text="Personal"
+            android:textColor="@color/white"
+            />
+        <RadioButton
+            android:id="@+id/rbOthers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/todo_other_category"
+            android:text="Otros"
+            android:textColor="@color/white"
+            />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnAgregarTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar tarea"
+        android:backgroundTint="@color/todo_accent"
+    />
+
+</LinearLayout>
