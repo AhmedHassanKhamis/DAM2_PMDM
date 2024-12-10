@@ -59,7 +59,7 @@ fun main() {
     val numerosProcesados = procesarLista(numeros, { it * 2 }, { it > 5 })
     println("Números procesados: $numerosProcesados")
 
-    // 8. Sumar resultados de la lista procesada
+    // 8. Sumar resultados de la lista procesada+
     val sumaResultados = numerosProcesados.sum()
     println("Suma de resultados: $sumaResultados")
 }
