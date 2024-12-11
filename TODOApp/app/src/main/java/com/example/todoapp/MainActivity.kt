@@ -92,4 +92,8 @@ class MainActivity : AppCompatActivity() {
         rvTareas= findViewById(R.id.rvTareas)
         fabAddTask = findViewById(R.id.fabAddTask)
     }
+
+    private fun onItemSelected(position: Int){
+        tareas[position].isSelected = !
+    }
 }
