@@ -4,10 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
-class TareasAdapter (var tareas:List<Tarea>, private val onItemSelected: (Int) -> Unit):RecyclerView.Adapter<TareasViewHolder>() {
+class TareasAdapter(var tareas: List<Tarea>, private val onTareaSeleccionada: (Int)->Unit): RecyclerView.Adapter<TareasViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TareasViewHolder {
-        val view = LayoutInflater.from(parent.context).
-        inflate(R.layout.item_tareas, parent, false)
+        val view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_todo_tarea, parent, false)
         return TareasViewHolder(view)
     }
 
@@ -17,10 +17,8 @@ class TareasAdapter (var tareas:List<Tarea>, private val onItemSelected: (Int) -
 
     override fun onBindViewHolder(holder: TareasViewHolder, position: Int) {
         holder.render(tareas[position])
-        holder.itemView.setOnClickListener {
-            onItemSelected(position)
+        holder.itemView.setOnClickListener{
+            onTareaSeleccionada(position)
         }
     }
-
-
 }

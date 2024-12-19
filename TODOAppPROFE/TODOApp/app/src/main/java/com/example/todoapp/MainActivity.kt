@@ -17,24 +17,25 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
 
-    private  val categorias = listOf(
-        Negocio,
+    private val categorias = listOf(
+        Negocios,
         TareasCategorias.Personal,
         Otros
     )
-    private  val tareas = mutableListOf(
-        Tarea("Prueba negocio", Negocio),
-        Tarea("Prueba otros", Otros),
-        Tarea("Prueba personal", Personal)
+
+    private val tareas = mutableListOf(
+        Tarea("PruebaNegocio", Negocios),
+        Tarea("PruebaOtros", Otros),
+        Tarea("PruebaPersonal", Personal)
     )
 
     private lateinit var rvCategorias: RecyclerView
     private lateinit var categoriasAdapter: CategoriasAdapter
 
-    private lateinit var rvTareas:RecyclerView
+    private lateinit var rvTareas: RecyclerView
     private lateinit var tareasAdapter: TareasAdapter
 
-    private lateinit var fabAddTask:FloatingActionButton
+    private lateinit var fabAddTask: FloatingActionButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,14 +46,14 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         initComponent()
         initUI()
         initListener()
+
     }
 
     private fun initListener() {
-        fabAddTask.setOnClickListener{
+        fabAddTask.setOnClickListener {
             mostrarDialogo()
         }
     }
@@ -61,20 +62,20 @@ class MainActivity : AppCompatActivity() {
         val dialogo = Dialog(this)
         dialogo.setContentView(R.layout.dialogo_tarea)
 
-        // para acceder a los componentes de la pantalla dialogo hay que acceder primero a el:
+        // para acceder a los componentes de la pantalla diálogo hay que acceder primero a él:
         val btnAgregarTarea: Button = dialogo.findViewById(R.id.btnAgregarTarea)
         val etTarea: EditText = dialogo.findViewById(R.id.etTarea)
         val rgCategorias: RadioGroup = dialogo.findViewById(R.id.rgCategorias)
 
-        btnAgregarTarea.setOnClickListener{
+        btnAgregarTarea.setOnClickListener {
 
             val tareaActual = etTarea.text.toString()
-            val selectId = rgCategorias.checkedRadioButtonId
 
+            val selectId = rgCategorias.checkedRadioButtonId
             val selectedRadioButton: RadioButton = rgCategorias.findViewById(selectId)
 
             val categoriaActual: TareasCategorias = when (selectedRadioButton.text) {
-                "Negocio" -> TareasCategorias.Negocio
+                "Negocio" -> TareasCategorias.Negocios
                 "Personal" -> TareasCategorias.Personal
                 else -> TareasCategorias.Otros
             }
@@ -83,7 +84,9 @@ class MainActivity : AppCompatActivity() {
             actualizarTarea()
             dialogo.hide()
 
+
         }
+
         dialogo.show()
     }
 
@@ -95,25 +98,22 @@ class MainActivity : AppCompatActivity() {
         tareasAdapter.notifyDataSetChanged()
     }
 
-
     private fun initComponent() {
         rvCategorias = findViewById(R.id.rvCategorias)
-        rvTareas= findViewById(R.id.rvTareas)
+        rvTareas = findViewById(R.id.rvTareas)
         fabAddTask = findViewById(R.id.fabAddTask)
     }
 
-
     private fun initUI() {
         categoriasAdapter = CategoriasAdapter(categorias) { actualizarCategorias(it) }
-        rvCategorias.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        rvCategorias.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         rvCategorias.adapter = categoriasAdapter
 
-        tareasAdapter= TareasAdapter(tareas)  { posicion -> onItemSelected(posicion) }
-        rvTareas.layoutManager=LinearLayoutManager(this)
-        rvTareas.adapter=tareasAdapter
-
+        tareasAdapter = TareasAdapter(tareas) { posicion -> onItemSelected(posicion) }
+        rvTareas.layoutManager = LinearLayoutManager(this)
+        rvTareas.adapter = tareasAdapter
     }
-
 
     private fun actualizarCategorias(posicion: Int) {
         categorias[posicion].isSelected = !categorias[posicion].isSelected
@@ -121,8 +121,8 @@ class MainActivity : AppCompatActivity() {
         actualizarTarea()
     }
 
-    private fun onItemSelected(position: Int){
-        tareas[position].isSelected = !tareas[position].isSelected
+    private fun onItemSelected(posicion: Int) {
+        tareas[posicion].isSelected = !tareas[posicion].isSelected
         actualizarTarea()
     }
 }
