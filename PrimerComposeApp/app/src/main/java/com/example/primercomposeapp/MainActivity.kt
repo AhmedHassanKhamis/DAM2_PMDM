@@ -12,6 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.primercomposeapp.componentes.layouts.MyBox
+import com.example.primercomposeapp.componentes.layouts.MyColumn
+import com.example.primercomposeapp.componentes.layouts.MyRow
 import com.example.primercomposeapp.login.Greeting
 import com.example.primercomposeapp.ui.theme.PrimerComposeAppTheme
 
@@ -26,7 +28,9 @@ class MainActivity : ComponentActivity() {
 //                        name = "Android",
 //                        modifier = Modifier.padding(innerPadding)
 //                    )
-                    MyBox()
+//                    MyBox()
+//                    MyColumn( Modifier.padding(innerPadding))
+                    MyRow(Modifier.padding(innerPadding))
                 }
             }
         }
