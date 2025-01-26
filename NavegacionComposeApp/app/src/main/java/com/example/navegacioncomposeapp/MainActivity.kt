@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.navegacioncomposeapp.navegacion.NavManager
 import com.example.navegacioncomposeapp.ui.theme.NavegacionComposeAppTheme
 import com.example.navegacioncomposeapp.views.HomeView
 
@@ -27,7 +28,9 @@ class MainActivity : ComponentActivity() {
 //                    )
 //                }
 //            }
-            HomeView()
+//            HomeView()
+            //        DetailView()
+            NavManager()
         }
     }
 }
