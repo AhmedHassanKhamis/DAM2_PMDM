@@ -3,7 +3,9 @@ package com.example.retrofitcomposeapp.di
 import com.example.retrofitcomposeapp.data.ApiGame
 import com.example.retrofitcomposeapp.util.Constants.Companion.BASE_URL
 import dagger.Module
+import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.create
@@ -17,9 +19,11 @@ import javax.inject.Singleton
 
  */
 @Module
-@InstallIn(Singleton::class)
+@InstallIn(SingletonComponent::class)
 class AppModule {
 
+    @Singleton
+    @Provides
     fun providerRetrofit(): ApiGame {
         return Retrofit.Builder()
             .baseUrl(BASE_URL)
