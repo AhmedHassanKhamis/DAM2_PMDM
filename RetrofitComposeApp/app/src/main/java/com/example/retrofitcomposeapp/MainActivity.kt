@@ -12,6 +12,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.retrofitcomposeapp.navigation.NavManager
 import com.example.retrofitcomposeapp.ui.theme.RetrofitComposeAppTheme
 import com.example.retrofitcomposeapp.viewmodel.GamesViewModel
 import com.example.retrofitcomposeapp.views.HomeView
@@ -30,7 +31,8 @@ class MainActivity : ComponentActivity() {
 //                        name = "Android",
 //                        modifier = Modifier.padding(innerPadding)
 //                    )
-                    HomeView(modifier = Modifier.padding(innerPadding), viewModel )
+//                    HomeView(modifier = Modifier.padding(innerPadding), viewModel )
+                    NavManager(modifier = Modifier.padding(innerPadding), viewModel)
                 }
             }
         }
