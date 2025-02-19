@@ -1,16 +1,16 @@
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.kotlin.android)
     kotlin("kapt")
     id ("com.google.dagger.hilt.android")
 }
 
 android {
-    namespace = "com.example.retrofitcomposeapp"
+    namespace = "com.cursoandroid.retrofitcomposeapp"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.retrofitcomposeapp"
+        applicationId = "com.cursoandroid.retrofitcomposeapp"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -71,7 +71,9 @@ dependencies {
     implementation ("com.google.dagger:hilt-android:2.46.1")
     kapt("com.google.dagger:hilt-compiler:2.46.1")
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("androidx.navigation:navigation-compose:2.8.5")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("io.coil-kt:coil-compose:1.4.0")
+
+
 }
